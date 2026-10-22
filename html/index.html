@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+    <title>R-Code|commercial site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+         <link rel="stylesheet" href="../css/style.css" />
+            </head>
+          <body>
+              <header>
+        <div id="header-box">
+        <div id="logo-container">
+            <img id="logo" src="../images/logo%20de%20marque%20(1).png" alt="logo-de-marque" />
+        </div>
+        <div id="link-container">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services-section">PROGRAM</a></li>
+                    <li><a href="#video-container">SESSION</a></li>
+                    <li><a href="https://wa.me/237676756564">CONTACT</a></li>
+                    <li>
+                        <button id="cart-toggle" type="button" aria-label="Open cart">
+                            &#128722; <span id="cart-count" aria-live="polite" hidden>0</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav></div>
+    </header>
+
+            <main id="home">
+                <div id="hero-section">
+                    <div id="intro-text">
+                        <p id="intro-heading">HELLO, Welcome to R-Code commercial site.</p>
+                    </div>
+                    <div id="description-text">
+                        <p id="second-text">Need a logo, flyer, website or advert ? D'ont hesitate to contact me if you require any of these services.     
+                        </p>
+                    </div>
+                    <div id="video-container">
+                        <video id="video" src="../videos/1er%20pas%20browser.mp4" poster="../images/logo%20de%20marque%20(1).png" controls playsinline preload="metadata"></video>
+                    </div>
+                    <div id="image-container">
+                        <img id="image" src="../images/logo%20de%20marque%20(1).png" alt="logo-de-marque" />
+                    </div>
+                </div>
+                <section id="services-section" aria-labelledby="services-heading">
+                    <h2 id="services-heading">Choose a service</h2>
+                    <div class="service-grid">
+                        <button class="service-card" type="button" data-service-id="logo">
+                            <span class="service-name">Logo</span>
+                            <span class="service-action">Add to cart</span>
+                        </button>
+                        <button class="service-card" type="button" data-service-id="flyer">
+                            <span class="service-name">Flyer</span>
+                            <span class="service-action">Add to cart</span>
+                        </button>
+                        <button class="service-card" type="button" data-service-id="advert">
+                            <span class="service-name">Advert</span>
+                            <span class="service-action">Add to cart</span>
+                        </button>
+                        <button class="service-card" type="button" data-service-id="website">
+                            <span class="service-name">Website</span>
+                            <span class="service-action">Add to cart</span>
+                        </button>
+                    </div>
+                    <p id="cart-status" class="visually-hidden" aria-live="polite"></p>
+                </section>
+            </main>
+            <footer>
+                <p>Thank you for visiting R-Code. Created by <strong>Rochelle Kamdjo</strong>.</p>
+                <p class="footer-social">Find R-Code on Facebook and TikTok, or message us on <a href="https://wa.me/237676756564">WhatsApp</a>.</p>
+            </footer>
+            <dialog id="cart-dialog" aria-labelledby="cart-title">
+                <div class="cart-header">
+                    <h2 id="cart-title">Your cart</h2>
+                    <button id="cart-close" type="button" aria-label="Close cart">&times;</button>
+                </div>
+                <p id="cart-empty">Your cart is empty.</p>
+                <ul id="cart-items"></ul>
+                <button id="checkout-button" type="button" disabled>Confirm order &amp; continue to WhatsApp</button>
+            </dialog>
+            <script src="../js/store.js" defer></script>
+    </body>
+</html>
